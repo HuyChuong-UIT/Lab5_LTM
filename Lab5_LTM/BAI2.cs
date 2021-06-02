@@ -35,7 +35,6 @@ namespace Lab5_LTM
             {
                 try
                 {
-
                     emailClient.Connect("127.0.0.1", 143,0);
                     emailClient.Authenticate(tbEmail.Text, tbPassword.Text);
                     var inbox = emailClient.Inbox;
