@@ -17,5 +17,10 @@ namespace Lab5_LTM
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BAI2 bai2 = new BAI2();
+            bai2.Show();
+        }
     }
 }
