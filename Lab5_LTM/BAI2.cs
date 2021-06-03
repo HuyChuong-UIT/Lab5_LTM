@@ -19,16 +19,7 @@ namespace Lab5_LTM
             InitializeComponent();
         }
 
-        private void BAI2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void button1_Click(object sender, EventArgs e)
         {
             using( var emailClient = new ImapClient())
@@ -42,13 +33,13 @@ namespace Lab5_LTM
                     for (int i = 0; i < inbox.Count; i++)
                     {
                         var message = inbox.GetMessage(i);
-                        ListViewItem lvi = new ListViewItem();
-                       
+                        ListViewItem lvi = new ListViewItem(message.Subject);
                         lvi.SubItems.Add(message.From.ToString());
                         lvi.SubItems.Add(message.Date.Date.ToString());
-                        listView1.Items.Add(message.Subject);
                         listView1.Items.Add(lvi);
                     }
+                    label5.Text = inbox.Count.ToString();
+                    label6.Text = inbox.Recent.ToString();
                 }
                 catch(Exception ex)
                 {
@@ -56,6 +47,11 @@ namespace Lab5_LTM
                 }
 
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

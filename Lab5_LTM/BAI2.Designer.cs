@@ -40,6 +40,8 @@ namespace Lab5_LTM
             this.columnTime = new System.Windows.Forms.ColumnHeader();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbEmail
@@ -53,6 +55,7 @@ namespace Lab5_LTM
             // 
             this.tbPassword.Location = new System.Drawing.Point(118, 68);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(282, 27);
             this.tbPassword.TabIndex = 1;
             // 
@@ -97,7 +100,6 @@ namespace Lab5_LTM
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // Email
             // 
@@ -132,11 +134,32 @@ namespace Lab5_LTM
             this.label4.TabIndex = 7;
             this.label4.Text = "Recent:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(101, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(362, 141);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "label6";
+            // 
             // BAI2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 470);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView1);
@@ -147,7 +170,6 @@ namespace Lab5_LTM
             this.Controls.Add(this.tbEmail);
             this.Name = "BAI2";
             this.Text = "BAI2";
-            this.Load += new System.EventHandler(this.BAI2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +188,7 @@ namespace Lab5_LTM
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ColumnHeader columnFrom;
         private System.Windows.Forms.ColumnHeader columnTime;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
