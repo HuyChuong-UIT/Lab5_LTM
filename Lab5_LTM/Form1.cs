@@ -28,5 +28,10 @@ namespace Lab5_LTM
             BAI3 bai3 = new BAI3();
             bai3.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
