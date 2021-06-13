@@ -94,9 +94,9 @@ namespace Lab5_LTM
             this.columnFrom,
             this.columnTime});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(36, 164);
+            this.listView1.Location = new System.Drawing.Point(29, 164);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(787, 282);
+            this.listView1.Size = new System.Drawing.Size(805, 294);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -139,9 +139,8 @@ namespace Lab5_LTM
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(101, 141);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 20);
+            this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 8;
-            this.label5.Text = "label5";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -149,9 +148,8 @@ namespace Lab5_LTM
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(362, 141);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 20);
+            this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 9;
-            this.label6.Text = "label6";
             // 
             // BAI2
             // 

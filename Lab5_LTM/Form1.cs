@@ -33,5 +33,11 @@ namespace Lab5_LTM
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BAI1 bai1 = new BAI1();
+            bai1.Show();
+        }
     }
 }
