@@ -55,7 +55,7 @@ namespace Lab5_LTM
             }
             
             listView1.Visible = true;
-            btnSend.Visible = true;
+            btnNewMail.Visible = true;
 
 
         }
@@ -67,7 +67,21 @@ namespace Lab5_LTM
             listView1.Visible = true;
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+  
+
+        private void btnNewMail_Click(object sender, EventArgs e)
+        {
+            gBNewMessage.Visible = true;
+            listView1.Visible = false;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            gBNewMessage.Visible = false;
+            listView1.Visible = true;
+        }
+
+        private void btnSend_Click_1(object sender, EventArgs e)
         {
             using (SmtpClient smtp = new SmtpClient("127.0.0.1"))
             {
@@ -95,17 +109,6 @@ namespace Lab5_LTM
                     }
                 }
             }
-        }
-
-        private void btnNewMail_Click(object sender, EventArgs e)
-        {
-            gBNewMessage.Visible = true;
-            listView1.Visible = false;
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
