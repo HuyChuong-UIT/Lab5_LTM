@@ -24,7 +24,7 @@ namespace Lab5_LTM
             btnNewMail.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
            
             user = tbEmail.Text.Trim();
@@ -60,23 +60,17 @@ namespace Lab5_LTM
 
         }
 
-      
-        private void button3_Click(object sender, EventArgs e)
-        {
-            gBNewMessage.Visible = false;
-            listView1.Visible = true;
-        }
-
-  
-
         private void btnNewMail_Click(object sender, EventArgs e)
         {
             gBNewMessage.Visible = true;
             listView1.Visible = false;
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
+            tbTo.Text = "";
+            tbSubject.Text = "";
+            richTextBox1.Text = "";
             gBNewMessage.Visible = false;
             listView1.Visible = true;
         }

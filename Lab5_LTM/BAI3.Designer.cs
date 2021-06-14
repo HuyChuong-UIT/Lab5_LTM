@@ -31,7 +31,7 @@ namespace Lab5_LTM
         {
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -40,7 +40,7 @@ namespace Lab5_LTM
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.gBNewMessage = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@ namespace Lab5_LTM
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbPassword);
@@ -73,15 +73,15 @@ namespace Lab5_LTM
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đăng nhập";
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(476, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Location = new System.Drawing.Point(476, 59);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(133, 36);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label1
             // 
@@ -141,7 +141,7 @@ namespace Lab5_LTM
             // gBNewMessage
             // 
             this.gBNewMessage.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.gBNewMessage.Controls.Add(this.button3);
+            this.gBNewMessage.Controls.Add(this.btnClose);
             this.gBNewMessage.Controls.Add(this.btnSend);
             this.gBNewMessage.Controls.Add(this.richTextBox1);
             this.gBNewMessage.Controls.Add(this.label3);
@@ -155,15 +155,15 @@ namespace Lab5_LTM
             this.gBNewMessage.TabStop = false;
             this.gBNewMessage.Text = "New Message";
             // 
-            // button3
+            // btnClose
             // 
-            this.button3.Location = new System.Drawing.Point(509, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 29);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Close";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.btnClose.Location = new System.Drawing.Point(509, 14);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(56, 29);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // btnSend
             // 
@@ -251,7 +251,7 @@ namespace Lab5_LTM
 
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbPassword;
@@ -260,7 +260,7 @@ namespace Lab5_LTM
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.GroupBox gBNewMessage;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
